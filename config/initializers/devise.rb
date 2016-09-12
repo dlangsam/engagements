@@ -273,6 +273,6 @@ Devise.setup do |config|
   # config.omniauth_path_prefix = '/my_engine/users/auth'
   config.omniauth :facebook, ENV.fetch('FB_APP_ID'), ENV.fetch('FB_APP_SECRET'),
  
-   scope: 'email', info_fields: 'email,name'
+   scope: 'email,public_profile,user_friends', info_fields: 'email,first_name,last_name'
                 
 end
